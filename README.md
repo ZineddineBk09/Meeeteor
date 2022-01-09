@@ -22,5 +22,13 @@ This app is build using NodeJS, Socket.io, Peerjs(WebRTC), and MongoDB.
 
 - [ ] - Recreate the Front-end with EJS.
 
-  ### Home Page
-  ![alt text](https://github.com/[ZineddineBk09]/[Meeeteor]/blob/[master]/Home.jpg?raw=true)
+  ### Home Page : 
+  ![alt text]https://github.com/ZineddineBk09/Meeeteor/blob/master/images/Home.png
+  
+  
+  ### Room Page :
+  ![alt text]https://github.com/ZineddineBk09/Meeeteor/blob/master/images/room.png
+  ![alt text]https://github.com/ZineddineBk09/Meeeteor/blob/master/images/share screen.png
+  
+  
+    
