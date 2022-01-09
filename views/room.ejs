@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeeteor - room</title>
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <link rel="icon" href="https://seeklogo.com/images/M/meteor-logo-513B96BFB2-seeklogo.com.png">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">  
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="share.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/1.3.1/peerjs.min.js.map"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const ROOM_ID = "<%= roomId %>";
+    </script>
+    <!-- Record functionality -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <div class="logo">
+            <img
+            src="https://seeklogo.com/images/M/meteor-logo-513B96BFB2-seeklogo.com.png"
+            alt=""
+          />
+            <h3 class="APP_NAME">Meeeteor</h2>
+        </div>  
+          <button id="inviteButton" class="options__button" title="Share meeting link">
+            <i class="fas fa-user-plus"></i>
+          </button>
+          
+        
+    </div>  
+    <!-- END HEADER -->
+
+    <div class="main">
+      <div class="main__left">
+        
+        <video class="video video1"  autoplay></video>
+        <div class="main__videos">
+          <div id="video-grid" class="videos__group"></div>
+        </div>
+      
+
+         <div class="options">
+      
+        <div class="option_left">
+          <div class="options__button"> 
+            <button id="record" title="Record meeting" type="button" onclick="recordScreen()" class="btn btn-info">
+              <i class="fas fa-record-vinyl"></i>
+            </button>
+          </div>
+          
+            <div class="options__button">
+              <button title="stop recording" type="button" class="red_btn" style="display: none
+              ; background-color: red; font-weight: bold;" id="stop" >Stop</button>
+            </div>
+          
+            <span>
+              <a id="download" style="display: none;">
+                <div class="options__button ">
+                  <button title="Download record" type="button" class="green_btn"><i class="fas fa-download"></i></button>
+                </div>
+              </a>
+            </span>
+        </div>
+               
+           
+        <div class="option_middle">
+           
+          <div class="options__button">
+            <button title="Open/Close camera" id="stopVideo">
+              <i class="fa fa-video-camera"></i>
+            </button>
+          </div>
+                  
+
+            <div  class="options__button">
+               <button id="muteButton" title="Open/Close microphone"> 
+                 <i class="fa fa-microphone"></i>
+               </button>
+            </div>          
+        
+            <div class="options__button start" >
+              <button title="Share screen">
+                <i class="fas fa-desktop"></i>          
+              </button>
+           </div>
+
+           <div class="options__button  stop_share" >
+             <button title="Stop sharing" class="red_btn" >
+               <img id="end_sharing" src="desktop_access_disabled_white_24dp.svg" alt="">        
+             </button>
+          </div>
+
+       </div>
+              
+       <div class="option_right">
+            
+            <div id="showChat" class="options__button">
+              <button>
+                 <i class="fa fa-comment"></i>
+              </button>
+            </div>
+
+            
+            <div  class="options__button">
+              <form action="/logout" method="get">
+
+                <button title="Leave the call" id="quitButton" class="red_btn">
+                  <i class="fas fa-sign-out-alt"></i>
+                </button>
+              </form>
+            </div>
+        </div>
+               
+     </div>
+     </div>
+        
+        <div class="main__right">
+
+          <div class="main__chat_window" id="main__chat__window">
+            <div class="messages" id="all_messages"></div>
+          </div>
+          <div class="main__message_container">
+
+              <input
+              type="text"
+              id="chat_message"
+              class="message-input"
+              placeholder="Type message here.."
+              />
+              <button type="submit" id="send-button" title="Send now"><i class="fa fa-send" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <pre id="log"></pre>
+    <script src="script.js"></script>
+    <script src="record.js"></script>
+    <script src="share_script.js"></script>
+  </body>
+</html>

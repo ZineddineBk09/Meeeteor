@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Roboto:ital,wght@0,400;1,300&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #282d32, #0c2b42eb, #043d69eb);
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.title {
+  margin: 1rem;
+  margin-bottom: 3rem;
+  color: crimson;
+}
+
+.list {
+  margin: 1rem 2rem;
+}
+
+.list-element {
+  margin: 0 10px;
+}
+.list-element > p {
+  margin: 5px 0 10px 10px;
+}
+
+.table {
+  color: #fff;
+  max-width: 60vw;
+  margin: 4rem auto 0 auto;
+  border-radius: 10px;
+}
+td {
+  color: lightgreen;
+}
+th {
+  color: #fff;
+}
+
+.link {
+  float: right;
+  color: crimson;
+  margin: 2rem;
+  flex: 1;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+.print-page {
+  border: none;
+  outline: none;
+  background-color: rgb(40, 166, 207);
+  font-weight: 900;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 2rem;
+}
+
+.print-page:hover {
+  background-color: rgb(21, 118, 150);
+}
+
+h5 {
+  color: white;
+  text-transform: capitalize;
+  margin: 2rem;
+}

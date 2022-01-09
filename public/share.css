@@ -1,0 +1,52 @@
+.video {
+  display: none;
+}
+
+.videoshare_hidden {
+  width: 95% !important;
+  flex: 1;
+  background-color: var(--main-dark);
+  margin: 0px auto;
+  border: none;
+  max-width: 1500px;
+}
+
+.video_groupe_hidden {
+  display: none;
+}
+
+.stop_share {
+  display: none;
+}
+
+.stop_share_after {
+  display: 1;
+}
+
+.start {
+  display: 1;
+}
+
+.start_after {
+  display: none;
+}
+
+.error {
+  color: red;
+}
+
+.warn {
+  color: orange;
+}
+
+.info {
+  color: darkgreen;
+}
+
+#log {
+  display: none;
+}
+
+.red_btn {
+  background:linear-gradient(to top, rgb(197, 22, 22), red) !important;
+}

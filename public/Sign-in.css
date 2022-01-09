@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+}
+
+body {
+  height: 120vh;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #282d32, #0c2b42eb, #043d69eb);
+}
+
+.container {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Roboto:ital,wght@1,300&display=swap");
+
+.container__body {
+  margin: auto 0;
+  color: wheat;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container__bodyRight {
+  color: rgb(6, 6, 49);
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  height: 70%px;
+  padding: 2rem;
+  border-radius: 15px;
+  border: 1px solid rgb(6, 6, 49);
+  width: 50%;
+  max-width: 650px;
+}
+
+.container__bodyRight > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__bodyRight > form > label {
+  font-weight: 400;
+  font-size: large;
+}
+
+.container__bodyRight > form > input {
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background-color: #eee;
+  margin: 20px 0;
+}
+
+.signinBtn,
+.signupBtn {
+  background: linear-gradient(to left, crimson, red);
+  padding: 0.5rem 3rem;
+  color: rgb(6, 6, 49);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1.5rem auto;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: all ease-in 250ms;
+  width: 90%;
+}
+.signinBtn:hover,
+.signupBtn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.container__bodyRight > p {
+  font-size: medium;
+}
+.container__bodyRight > p > a {
+  color: crimson;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#isTeacher {
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background-color: #eee;
+  margin: 20px 0;
+}
+
+.oblg {
+  color: red;
+}

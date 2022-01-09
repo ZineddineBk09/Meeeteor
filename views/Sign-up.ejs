@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeeteor - sign-up</title>
+    <link
+      rel="icon"
+      href="https://seeklogo.com/images/M/meteor-logo-513B96BFB2-seeklogo.com.png"
+    />
+
+    <script>
+      const SignUpId = "<%= signUpId %>";
+    </script>
+    <link rel="stylesheet" href="Sign-in.css" />
+  </head>
+  <body>
+    <body>
+      <div class="container">
+        <div class="container__body">
+          <div class="container__bodyRight">
+            <form action="/sign-up" id="form" method="post">
+              <label for="first-name">Name<span class="oblg">* </span
+                ><span></label>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                value="<%= typeof name != 'undefined' ? name : ''%>"
+                required
+                placeholder="enter your name here..."
+              />
+              <label for="email">Email<span class="oblg">* </span
+                ><span></label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                required
+                value="<%= typeof email != 'undefined' ? email : ''%>"
+                
+                placeholder="enter your email here..."
+              />
+              <label for="password">Password<span class="oblg">* </span
+                ><span></label>
+              <input
+                id="password"
+                type="password"
+                name="password"
+                minlength="6"      
+                required          
+                placeholder="enter your password here..."
+              />
+              <label for="password2">Confirm Your Password<span class="oblg">* </span
+                ><span></label>
+              <input
+                id="password2"
+                type="password"
+                name="password2"
+                minlength="6"
+                required
+                placeholder="confirm your password here..."
+              />
+              <label for="isTeacher">Are you a teacher ?</label>
+              <select id="isTeacher" name="isTeacher">
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+              </select>
+              <button id="signupBtn" class="signinBtn">Sign up</button>
+            </form>
+            <p>explore our <a href="/">services?</a></p>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </body>
+</html>
