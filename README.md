@@ -2,13 +2,7 @@
 
 Meeeteor is a video chat app that makes it easy to groups up with people you want to meet
 
-![IMG](./video-chat.png)
-
-Check out the live demo: https://video-chat-app-v1.herokuapp.com/
-
-An article I wrote which explains how I build this: https://bit.ly/3wh0gyR
-
-This app is build using NodeJS, Socket.io, Peerjs(WebRTC), and MongoDB.
+This app is build using NodeJS, ExpressJS, Socket.io, Peerjs(WebRTC), and MongoDB.
 
 ## How to run the project?
 
@@ -23,12 +17,12 @@ This app is build using NodeJS, Socket.io, Peerjs(WebRTC), and MongoDB.
 - [ ] - Recreate the Front-end with EJS.
 
   ### Home Page : 
-  ![alt text]https://github.com/ZineddineBk09/Meeeteor/blob/master/images/Home.png
+  ![alt text](https://github.com/ZineddineBk09/Meeeteor/blob/master/images/Home.png)
   
   
   ### Room Page :
-  ![alt text]https://github.com/ZineddineBk09/Meeeteor/blob/master/images/room.png
-  ![alt text]https://github.com/ZineddineBk09/Meeeteor/blob/master/images/share screen.png
+  ![alt text](https://github.com/ZineddineBk09/Meeeteor/blob/master/images/room.png)
+  ![alt text](https://github.com/ZineddineBk09/Meeeteor/blob/master/images/share%20screen.png)
   
   
     
